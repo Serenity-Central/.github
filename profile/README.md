@@ -1,6 +1,6 @@
 # 🧠 Serenity Developer Brief
 
-### Version 1.0 — June 2025
+### Version 1.1.0 — October 2025
 **Contact:** Kieron Skelton (Executive Director & Lead Developer)
 <br>📧 [kieron-skelton@serenitycentral.cloud](mailto:kieron-skelton@serenitycentral.cloud) | 🌐 [www.serenitycentral.cloud](www.serenitycentral.cloud)
 
@@ -12,7 +12,7 @@
 <br>Serenity is a mental health ecosystem designed to build safe, supportive spaces for peer-support, healing, and emotional wellbeing. It exists to bridge the gap between digital platforms and meaningful, accessible mental health support.
 
 **Who are our users?**
-<br>~40,000 Discord users aged 16+, many of whom are vulnerable, neurodivergent, or living with mental health challenges. They come to Serenity for anonymous support, resources, and a sense of safety.
+<br>~55,000 Discord users aged 16+, many of whom are vulnerable, neurodivergent, or living with mental health challenges. They come to Serenity for anonymous support, resources, and a sense of safety.
 
 **What do we offer (right now)?**
 
@@ -23,10 +23,9 @@
 - A public website with community info, blog posts, and recruitment tools
 
 **Where are we going?**
-<br>Within 6–12 months, we aim to:
+<br>Within Q4 2025 - Q1 2026, we aim to:
 
-- Expand the bot to Slack, Telegram, and other platforms
-- Launch an independent, standalone Serenity support platform (web-based)
+- Launch a basic, light-weight, independent, standalone Serenity support platform (web-based)
 - Build the foundations of a sustainable, ethical mental health tech ecosystem
 
 ---
@@ -36,9 +35,9 @@
 **Frontend (Website):** React
 <br>**Backend:** Node.js
 
-- MongoDB: policies, blog, recruitment, team
-- MySQL: Discord bot & services
-- Redis: Used for real-time data exchange between the site and bots
+- MongoDB: policies, blog, recruitment, team, peer-to-peer messages
+- MySQL: (Slowly moving away from MySQL - will only be used for hard data)
+- Redis: Used for real-time data exchange between the all of Serenity's services
 
 **Discord Bot:** discord.js + MySQL + Redis (some HTML rendering for UI previews)
 
@@ -68,14 +67,14 @@ Each repository uses `development` and `production` branches with manual deploym
 <br> Just Kieron, for now. This is why we **want you** here!
 
 **Task Tracking:**
-<br> Jira Scrum Board (epics, sprints, backlog grooming).
+<br> Asana Board (projects, sprints, backlog grooming).
 
 **Bug Reporting:**
-<br>User-reported bugs flow via Discord or GitHub.
+<br>User-reported bugs flow via Discord, GitHub, or contact forms.
 <br>Triage and prioritisation are manual for now.
 
 **Communication:**
-<br>Email, Discord, and Jira.
+<br>Email, WhatsApp, Discord, and Asana.
 <br> Kieron is flexible and responsive, so however you feel comfortable contacting him is up to you.
 
 **Onboard:**
@@ -93,7 +92,7 @@ platform)
 - Build internal dashboards for:
     - Trust & safety moderation
     - Outreach/contact tools
-- Expand bot features and start building Slack/Telegram-ready tooling
+- Develop and prepare Serenity's standalone platform for product launch
 - Improve error handling, logging, and observability
 - Evaluate CI/CD and testing frameworks — help define what “better” looks like here
 
