@@ -1,3 +1,5 @@
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00A3FF&width=435&lines=🚀+Building+Serenity;💭+Coding+with+purpose;🧩+Not+chasing+badges.)](https://git.io/typing-svg)
+
 # 🧠 Serenity Developer Brief
 
 ### Version 1.1.0 — October 2025
