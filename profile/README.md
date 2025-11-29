@@ -44,7 +44,7 @@
 **Discord Bot:** discord.js + MySQL + Redis (some HTML rendering for UI previews)
 
 **Repositories:** (all on GitHub)
-- [Serenity API](https://github.com/Serenity-Central/serenityApi) - Backend API
+- [Serenity API](https://github.com/Serenity-Central/serenityAPI_v1) - Backend API
 - [Serenity Website](https://github.com/Serenity-Central/serenityWebsite) - Frontend
 - [Serenity Discord](https://github.com/Serenity-Central/serenity) - Discord Bot
 - [Cloudiie Application](https://github.com/Serenity-Central/cloudiie) - Independent moderation tool (non-core)
