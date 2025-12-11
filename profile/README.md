@@ -45,7 +45,7 @@
 
 **Repositories:** (all on GitHub)
 - [Serenity API](https://github.com/Serenity-Central/serenityAPI_v1) - Backend API
-- [Serenity Website](https://github.com/Serenity-Central/serenityWebsite) - Frontend
+- [Serenity Website](https://github.com/Serenity-Central/serenityWebsite_v1) - Frontend
 - [Serenity Discord](https://github.com/Serenity-Central/serenity) - Discord Bot
 - [Cloudiie Application](https://github.com/Serenity-Central/cloudiie) - Independent moderation tool (non-core)
 
