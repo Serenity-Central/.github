@@ -2,124 +2,128 @@
 
 # 🧠 Serenity Developer Brief
 
-### Version 1.1.0 — October 2025
-**Contact:** Kieron Skelton (Executive Director & Lead Developer)
+### Version 2.0.0 — January 2026
+**Contact:** <br>
+Kieron Skelton (Executive Director & Lead Developer)
 <br>📧 [kieron-skelton@serenitycentral.cloud](mailto:kieron-skelton@serenitycentral.cloud) | 🌐 [www.serenitycentral.cloud](www.serenitycentral.cloud)
 
 ---
 
-### 🌱 Mission & Context
+## Welcome!
 
-**What is Serenity?** 
-<br>Serenity is a mental health ecosystem designed to build safe, supportive spaces for peer-support, healing, and emotional wellbeing. It exists to bridge the gap between digital platforms and meaningful, accessible mental health support.
+Thank you for contributing to **The Serenity Project**.
 
-**Who are our users?**
-<br>~55,000 Discord users aged 16+, many of whom are vulnerable, neurodivergent, or living with mental health challenges. They come to Serenity for anonymous support, resources, and a sense of safety.
+Serenity is a mental-health–focused social enterprise building safe, ethical, and accessible support systems. Our codebase underpins real people, real vulnerability, and real outcomes, so clarity, care, and correctness matter here.
 
-**What do we offer (right now)?**
-
-- A modular Discord bot with:
-    - Anonymous peer support
-    - Wellbeing tools (affirmations, self-care tools, mood tracking)
-    - Serenity-side moderation and safety tools
-- A public website with community info, blog posts, and recruitment tools
-
-**Where are we going?**
-<br>Within Q4 2025 - Q1 2026, we aim to:
-
-- Launch a basic, light-weight, independent, standalone Serenity support platform (web-based)
-- Build the foundations of a sustainable, ethical mental health tech ecosystem
+This document explains **how we work**, **how to contribute**, and **how to avoid breaking things that keep people safe**.
 
 ---
 
-### 🛠️ Tech Stack & Codebase
+## Tech Stack & Codebase
 
-**Frontend (Website):** React
-<br>**Backend:** Node.js
+### Frontend
+- **Website:** React
+- **Staff Dashboard:** React + Vite (Seperate repository from the primary platform)
 
-- MongoDB: policies, blog, recruitment, team, peer-to-peer messages
-- MySQL: (Slowly moving away from MySQL - will only be used for hard data)
-- Redis: Used for real-time data exchange between the all of Serenity's services
+### Backend
+- **API:** Node.js (Express)
+- **MongoDB:**
+<br> Used for flexible / document based data:
+  - Policies
+  - Blog Posts
+  - Recruitment
+  - Team data
+  - peer-to-peer messages
+- **MySQL:**
+  <br> Used only for *hard, relational date* (e.g. subscribers, users & sessions).
+- **Redis:**
+  <br> Used for:
+  - Real-time data exchange
+  - Cross service communitcation
+  - Performance-sensitive operations 
+   
+---
 
-**Discord Bot:** discord.js + MySQL + Redis (some HTML rendering for UI previews)
-
-**Repositories:** (all on GitHub)
-- [Serenity API](https://github.com/Serenity-Central/serenityAPI_v1) - Backend API
-- [Serenity Website](https://github.com/Serenity-Central/serenityWebsite_v1) - Frontend
-- [Serenity Staff Dashboard](https://github.com/Serenity-Central/serenityStaffDashboard) - Staff Frontend
-- [Serenity Discord](https://github.com/Serenity-Central/serenity) - Discord Bot
-- [Cloudiie Application](https://github.com/Serenity-Central/cloudiie) - Independent moderation tool (non-core)
-
-Each repository uses `development` and `production` branches with manual deployments.
+## Repositories: 
+All repositories are hosted on GitHub
+- **[Serenity API](https://github.com/Serenity-Central/serenityAPI_v1)** - Backend API
+- **[Serenity Website](https://github.com/Serenity-Central/serenityWebsite_v1)** - Public Frontend
+- **[Serenity Staff Dashboard](https://github.com/Serenity-Central/serenityStaffDashboard)** - Staff Frontend
 
 ---
 
-### 🚀 Infrastructure & Deployment
-- Bots & API are containerised using **Pterodactyl**, hosted on an **OVH VPS**
-- Website is hosted on a separate **Hostinger VPS**
-- Secrets are managed via local `.env` files (not versioned)
-- Manual deployments via **WinSCP** and **PuTTY (Ubuntu)**
-- Weekly deployments every **Monday**, with pre-deploy backups created and locked
-- Grafana dashboard tracks error logs pulled from a custom MySQL error table
+## Branching Strategy (Important)
+
+<br>We use a **simple, deliberate flow**:
+- `production` → Live environment
+- `development` → Staging / integration
+- `feature/*` → All new work
+
+### Correct workflow
+
+**Do not open PRs directly from `development` into `production`.**  
+If this happens accidentally, we will ask you to re-branch, no drama, just process.
+1. Create a feature branch from `development`
+2. Commit work to your feature branch
+3. Open a PR **into `development`**
+4. `development` → `production` merges are handled manually
 
 ---
 
-### 🧭 Workflow & Team
+## Pull Requests
 
-**Current Dev Team:**
-<br> Just Kieron, for now. This is why we **want you** here!
-
-**Task Tracking:**
-<br> Asana Board (projects, sprints, backlog grooming).
-
-**Bug Reporting:**
-<br>User-reported bugs flow via Discord, GitHub, or contact forms.
-<br>Triage and prioritisation are manual for now.
-
-**Communication:**
-<br>Email, WhatsApp, Discord, and Asana.
-<br> Kieron is flexible and responsive, so however you feel comfortable contacting him is up to you.
-
-**Onboard:**
-<br>Currently handled 1:1 via conversation. You'll help define a proper dev onboarding flow.
-<br> Each repository has its own `README.md` file with configuration instructions.
+When opening a PR:
+- Keep scope focused
+- Explain *why* the change exists, not just *what* it does
+- Flag:
+  - security impact
+  - data model changes
+  - safeguarding implications (if applicable)
 
 ---
 
-### 🔧 Short-Term Developer Priorities
+## Security, Privacy & Safeguarding
 
-**Immediate Needs:**
--  Stabilise and refactor the React + Node SPA (the backbone of our future standalone
-platform)
-- Improve developer onboarding + DX (docs, env setup, GitHub clarity)
-- Build internal dashboards for:
-    - Trust & safety moderation
-    - Outreach/contact tools
-- Develop and prepare Serenity's standalone platform for product launch
-- Improve error handling, logging, and observability
-- Evaluate CI/CD and testing frameworks — help define what “better” looks like here
+This platform handles sensitive mental health data.
 
----
+Please:
+- Never log personal data unnecessarily
+- Avoid console logging in production code
+- Treat anything user-related as potentially sensitive
+- Flag uncertainty early — silence is riskier than questions
 
-### 🧩 Ideal First Tasks (Low Lift, High Value)
-
-- Improve current error logging UI (Grafana or custom frontend)
-- Modularise outdated React components
-- Review SerenityAPI endpoints and propose structural improvements
-- Begin documenting setup instructions for one of the repos
-- Audit our .env usage and suggest safe restructuring
+If you spot a security concern, raise it immediately.
 
 ---
 
-### 🌄 Growth & Future Vision
+## Tech Debt
 
-- This is not a short-term fire-and-forget project.
-- Our goal is to grow into a full-stack platform for community-based mental health support—one that scales without compromising safety or empathy.
-- Contributors today may evolve into core developers or paid leads when funding is secured.
+Debt is officially recorded and documented by the leadership team. But you will see comments sush as:
+```js
+// TODO(tech-debt): ...
+```
+This **is intentional and tracked.**
+
+Do not silently "fix" tech debt unless it is:
+- directly related to your task, or
+- explicitly agreed with the Lead Developer / CTO
+
+We track debt deliberately to avoid accidental regressions.
 
 ---
+
+## Communication & Expectations
+- Ask questions early
+- No one is expected to know everything
+- Protect your boundaries — expectation creep helps nobody
+- We host bi-weekly stand-ups
+- We optimise for clarity over speed
+
+If something feels unclear, that’s a documentation issue, not a personal failure.
 
 **Ready to join the mission?**
-<br>Let Kieron know what excites you, what scares you, and where you’d like to begin.
+<br>Let us know what excites you, what scares you, and where you’d like to begin.
 
 You don’t need to know everything. You just need to care.
+
+https://serenitycentral.cloud/contact
