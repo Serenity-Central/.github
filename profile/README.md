@@ -41,6 +41,14 @@ This document explains **how we work**, **how to contribute**, and **how to avoi
 
 ---
 
+## License
+
+This project is proprietary and confidential.
+
+See the [LICENSE](LICENSE) file for full terms.
+
+---
+
 ## Tech Stack & Codebase
 
 ### Frontend
