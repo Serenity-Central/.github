@@ -2,10 +2,27 @@
 
 # 🧠 Serenity Developer Brief
 
-### Version 2.0.0 — January 2026
+### Version 2.1.0 — March 2026
 **Contact:** <br>
-Kieron Skelton (Executive Director & Lead Developer)
-<br>📧 [kieron-skelton@serenitycentral.cloud](mailto:kieron-skelton@serenitycentral.cloud) | 🌐 [www.serenitycentral.cloud](www.serenitycentral.cloud)
+Kieron Skelton (Executive Director)
+<br>📧 [kieron-skelton@serenitycentral.cloud](mailto:kieron-skelton@serenitycentral.cloud) <br> 🌐 [www.serenitycentral.cloud](www.serenitycentral.cloud) <br><br>
+Monika Lumi (Director of Engineering)
+<br>📧 [monika-lumi@serenitycentral.cloud](mailto:monika-lumi@serenitycentral.cloud) <br> 🌐 [www.serenitycentral.cloud](www.serenitycentral.cloud) 
+
+---
+![Node](https://img.shields.io/badge/node-%3E=18-green)
+[![License](https://img.shields.io/badge/license-proprietary-red)](./LICENSE)
+![Status](https://img.shields.io/badge/status-active-success)
+
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
+![Coverage](https://img.shields.io/badge/coverage-85%25-yellowgreen)
+![Lint](https://img.shields.io/badge/lint-eslint-blue)
+
+![GDPR](https://img.shields.io/badge/GDPR-compliant-blue)
+![Audit Logs](https://img.shields.io/badge/audit%20logging-enabled-blueviolet)
+
+![Safeguarding](https://img.shields.io/badge/safeguarding-active-important)
+![Mental Health](https://img.shields.io/badge/focus-mental%20health-critical)
 
 ---
 
@@ -16,6 +33,11 @@ Thank you for contributing to **The Serenity Project**.
 Serenity is a mental-health–focused social enterprise building safe, ethical, and accessible support systems. Our codebase underpins real people, real vulnerability, and real outcomes, so clarity, care, and correctness matter here.
 
 This document explains **how we work**, **how to contribute**, and **how to avoid breaking things that keep people safe**.
+
+---
+
+> **Confidential & Proprietary:**  
+> This repository contains private Serenity Project code. Access is restricted to authorised contributors under NDA.
 
 ---
 
@@ -79,6 +101,11 @@ When opening a PR:
   - security impact
   - data model changes
   - safeguarding implications (if applicable)
+ 
+### Templates:
+- PR Template → [ISSUE_TEMPLATE/PR_template.md](https://github.com/Serenity-Central/.github/blob/main/ISSUE_TEMPLATE/PR_template.md)
+- Task Template → [ISSUE_TEMPLATE/task_template.md](https://github.com/Serenity-Central/.github/blob/main/ISSUE_TEMPLATE/task_template.md)
+
 
 ---
 
@@ -119,7 +146,12 @@ We track debt deliberately to avoid accidental regressions.
 - We host bi-weekly stand-ups
 - We optimise for clarity over speed
 
-If something feels unclear, that’s a documentation issue, not a personal failure.
+### Internal Channels:
+- WhatsApp (team coordination)
+- Sling (rostering and aailability)
+- Serenity Mail (Private & Confidentail internal correspondence) 
+
+---
 
 **Ready to join the mission?**
 <br>Let us know what excites you, what scares you, and where you’d like to begin.
