@@ -10,7 +10,7 @@ Monika Lumi (Director of Engineering)
 <br>📧 [monika-lumi@serenitycentral.cloud](mailto:monika-lumi@serenitycentral.cloud) <br> 🌐 [www.serenitycentral.cloud](www.serenitycentral.cloud) 
 
 ---
-![Node](https://img.shields.io/badge/node-%3E=18-green)
+![Node](https://img.shields.io/badge/node-%3E=20-green)
 [![License](https://img.shields.io/badge/license-proprietary-red)](./LICENSE)
 ![Status](https://img.shields.io/badge/status-active-success)
 
