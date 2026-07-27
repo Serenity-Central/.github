@@ -1,169 +1,114 @@
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=00A3FF&width=435&lines=🚀+Building+Serenity;💭+Coding+with+purpose;🧩+Not+chasing+badges.)](https://git.io/typing-svg)
+<div align="center">
 
-# 🧠 Serenity Developer Brief
+# Serenity
 
-### Version 2.1.0 — March 2026
-**Contact:** <br>
-Kieron Skelton (Executive Director)
-<br>📧 [kieron-skelton@serenitycentral.cloud](mailto:kieron-skelton@serenitycentral.cloud) <br> 🌐 [www.serenitycentral.cloud](www.serenitycentral.cloud) <br><br>
-Monika Lumi (Director of Engineering)
-<br>📧 [monika-lumi@serenitycentral.cloud](mailto:monika-lumi@serenitycentral.cloud) <br> 🌐 [www.serenitycentral.cloud](www.serenitycentral.cloud) 
+### A safer space to breathe.
 
----
-![Node](https://img.shields.io/badge/node-%3E=20-green)
-[![License](https://img.shields.io/badge/license-proprietary-red)](./LICENSE)
-![Status](https://img.shields.io/badge/status-active-success)
+We are building safer, calmer and more human digital spaces for mental health support.
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![Coverage](https://img.shields.io/badge/coverage-85%25-yellowgreen)
-![Lint](https://img.shields.io/badge/lint-eslint-blue)
+[![Website](https://img.shields.io/badge/Website-serenitycentral.cloud-7656A8?style=for-the-badge)](https://serenitycentral.cloud)
+[![Public Beta](https://img.shields.io/badge/Public_Beta-September_2026-4F8A8B?style=for-the-badge)](https://serenitycentral.cloud)
+[![Status](https://img.shields.io/badge/Status-Active_Development-2E7D32?style=for-the-badge)](#current-roadmap)
 
-![GDPR](https://img.shields.io/badge/GDPR-compliant-blue)
-![Audit Logs](https://img.shields.io/badge/audit%20logging-enabled-blueviolet)
+</div>
 
-![Safeguarding](https://img.shields.io/badge/safeguarding-active-important)
-![Mental Health](https://img.shields.io/badge/focus-mental%20health-critical)
+## About Serenity
 
----
+The Serenity Project is a UK mental health social enterprise creating accessible digital support built around safety, privacy and genuine human connection.
 
-## Welcome!
+Our work is designed for the moments when someone needs space to breathe, make sense of how they feel, find reliable information or connect with a supportive community.
 
-Thank you for contributing to **The Serenity Project**.
+Serenity is not a crisis service or a replacement for professional healthcare. We are building a responsible layer of community and emotional support around the services people may already use.
 
-Serenity is a mental-health–focused social enterprise building safe, ethical, and accessible support systems. Our codebase underpins real people, real vulnerability, and real outcomes, so clarity, care, and correctness matter here.
+## What we are building
 
-This document explains **how we work**, **how to contribute**, and **how to avoid breaking things that keep people safe**.
+### Serenity Community
 
----
+A moderated community where people can share what they are going through, respond with support and feel less alone without being pushed to reveal more than they are comfortable sharing.
 
-> **Confidential & Proprietary:**  
-> This repository contains private Serenity Project code. Access is restricted to authorised contributors under NDA.
+### Anonymous venting
 
----
+A quieter space for people to express difficult thoughts and emotions, with privacy-conscious identities, content controls and safeguarding processes built into the platform.
 
-## License
+### Serenity Hubs
 
-This project is proprietary and confidential.
+A growing library of carefully structured mental health resources designed to make trustworthy information easier to understand and navigate.
 
-See the [LICENSE](LICENSE) file for full terms.
+### Staff safety tools
 
----
+Purpose-built moderation, safeguarding, audit and operational tools that help trained team members protect the community and respond consistently.
 
-## Tech Stack & Codebase
+### 1-on-1 listening
 
-### Frontend
-- **Website:** React
-- **Staff Dashboard:** React + Vite (Seperate repository from the primary platform)
+Private sessions with trained listeners are planned for December 2026. We moved this feature beyond the September MVP so it can receive the dedicated safety, training and operational preparation it deserves.
 
-### Backend
-- **API:** Node.js (Express)
-- **MongoDB:**
-<br> Used for flexible / document based data:
-  - Policies
-  - Blog Posts
-  - Recruitment
-  - Team data
-  - peer-to-peer messages
-- **MySQL:**
-  <br> Used only for *hard, relational date* (e.g. subscribers, users & sessions).
-- **Redis:**
-  <br> Used for:
-  - Real-time data exchange
-  - Cross service communitcation
-  - Performance-sensitive operations 
-   
----
+## Current roadmap
 
-## Repositories: 
-All repositories are hosted on GitHub
-- **[Serenity API](https://github.com/Serenity-Central/serenityAPI_v1)** - Backend API
-- **[Serenity Website](https://github.com/Serenity-Central/serenityWebsite_v1)** - Public Frontend
-- **[Serenity Staff Dashboard](https://github.com/Serenity-Central/serenityStaffDashboard)** - Staff Frontend
+Our public beta is planned for **September 2026**.
 
----
+The first release is focused on doing a smaller number of things properly:
 
-## Branching Strategy (Important)
+- Secure account access
+- Anonymous community venting
+- Peer support interactions
+- Mental health resource hubs
+- Moderation and safeguarding workflows
+- Reliable deployment, monitoring and rollback processes
 
-<br>We use a **simple, deliberate flow**:
-- `production` → Live environment
-- `development` → Staging / integration
-- `feature/*` → All new work
+We would rather release carefully than rush features that involve vulnerable people. That principle shapes both our roadmap and our engineering decisions.
 
-### Correct workflow
+## Our principles
 
-**Do not open PRs directly from `development` into `production`.**  
-If this happens accidentally, we will ask you to re-branch, no drama, just process.
-1. Create a feature branch from `development`
-2. Commit work to your feature branch
-3. Open a PR **into `development`**
-4. `development` → `production` merges are handled manually
+- **Safety by design:** Safeguarding is part of product design, engineering and operations from the beginning.
+- **Privacy with purpose:** We collect and expose only what is necessary for the service to work safely.
+- **Human-led support:** We do not use AI to provide mental health support or imitate human care.
+- **Accessible by default:** Calm language, readable interfaces and inclusive interaction patterns are treated as core requirements.
+- **Responsible engineering:** Security, auditability, testing and recovery matter as much as shipping the feature.
+- **Honest boundaries:** We are clear about what Serenity can provide and when someone may need specialist or emergency support.
 
----
+## Engineering at Serenity
 
-## Pull Requests
+Our platform currently uses:
 
-When opening a PR:
-- Keep scope focused
-- Explain *why* the change exists, not just *what* it does
-- Flag:
-  - security impact
-  - data model changes
-  - safeguarding implications (if applicable)
- 
-### Templates:
-- PR Template → [ISSUE_TEMPLATE/PR_template.md](https://github.com/Serenity-Central/.github/blob/main/ISSUE_TEMPLATE/PR_template.md)
-- Task Template → [ISSUE_TEMPLATE/task_template.md](https://github.com/Serenity-Central/.github/blob/main/ISSUE_TEMPLATE/task_template.md)
+- **React** for the public website
+- **React and Vite** for the staff dashboard
+- **Node.js and Express** for the API
+- **MySQL** for relational accounts, sessions and operational records
+- **MongoDB** for flexible content and community data
+- **Redis** for real-time and performance-sensitive workloads
 
+The platform is separated across public, staff and API services so each area can evolve with appropriate security and deployment controls.
 
----
+## Core repositories
 
-## Security, Privacy & Safeguarding
+| Repository | Purpose |
+| --- | --- |
+| [serenityAPI_v1](https://github.com/Serenity-Central/serenityAPI_v1) | Backend API, authentication, data services and platform integrations |
+| [serenityWebsite_v1](https://github.com/Serenity-Central/serenityWebsite_v1) | Public Serenity platform and community experience |
 
-This platform handles sensitive mental health data.
+## Working with us
 
-Please:
-- Never log personal data unnecessarily
-- Avoid console logging in production code
-- Treat anything user-related as potentially sensitive
-- Flag uncertainty early — silence is riskier than questions
+Most Serenity repositories are private because they contain proprietary platform code and security-sensitive implementation details. Access is provided to authorised contributors working under Serenity's confidentiality and engineering processes.
 
-If you spot a security concern, raise it immediately.
+Contributors are expected to:
 
----
+- Work from focused feature or fix branches
+- Open pull requests into `development`
+- Explain why a change is needed and how it was validated
+- Identify security, privacy, data and safeguarding implications
+- Keep unrelated refactors out of focused work
+- Treat review as collaboration, not ceremony
 
-## Tech Debt
+If something feels unsafe or unclear, raise it early. Silence is rarely a useful engineering control.
 
-Debt is officially recorded and documented by the leadership team. But you will see comments sush as:
-```js
-// TODO(tech-debt): ...
-```
-This **is intentional and tracked.**
+## Connect with Serenity
 
-Do not silently "fix" tech debt unless it is:
-- directly related to your task, or
-- explicitly agreed with the Lead Developer / CTO
+- **Website:** [serenitycentral.cloud](https://serenitycentral.cloud)
+- **Contact:** [serenitycentral.cloud/contact](https://serenitycentral.cloud/contact)
+- **Instagram:** [@officialserenitycentral](https://www.instagram.com/officialserenitycentral/)
 
-We track debt deliberately to avoid accidental regressions.
+<div align="center">
 
----
+Built with care for the people who may eventually rely on it.
 
-## Communication & Expectations
-- Ask questions early
-- No one is expected to know everything
-- Protect your boundaries — expectation creep helps nobody
-- We host bi-weekly stand-ups
-- We optimise for clarity over speed
-
-### Internal Channels:
-- WhatsApp (team coordination)
-- Sling (rostering and aailability)
-- Serenity Mail (Private & Confidentail internal correspondence) 
-
----
-
-**Ready to join the mission?**
-<br>Let us know what excites you, what scares you, and where you’d like to begin.
-
-You don’t need to know everything. You just need to care.
-
-https://serenitycentral.cloud/contact
+</div>
